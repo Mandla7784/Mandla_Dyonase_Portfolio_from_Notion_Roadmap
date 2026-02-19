@@ -14,8 +14,8 @@ const config: Config = {
         surfaceLight: "#1e293b",
       },
       fontFamily: {
-        display: ["var(--font-clash)", "system-ui", "sans-serif"],
-        sans: ["var(--font-geist)", "system-ui", "sans-serif"],
+        display: ["var(--font-display)", "system-ui", "sans-serif"],
+        sans: ["var(--font-sans)", "system-ui", "sans-serif"],
       },
       animation: {
         "float": "float 6s ease-in-out infinite",
