@@ -52,6 +52,7 @@ export default function Education() {
           <motion.article
             variants={item}
             className="relative pl-6 border-l-2 border-slate-700 hover:border-accent/60 transition-colors"
+            whileHover={{ x: 4 }}
           >
             <div className="absolute left-0 top-0 w-3 h-3 -translate-x-[7px] rounded-full bg-accent" />
             <p className="font-display font-semibold text-white text-lg">

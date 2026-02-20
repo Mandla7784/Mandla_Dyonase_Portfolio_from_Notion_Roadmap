@@ -21,6 +21,13 @@ const item = {
 
 const experiences = [
   {
+    role: "Cloud Engineer Intern",
+    company: "BCX",
+    period: "Mar 2025 – May 2025 (3 months)",
+    description:
+      "Cloud engineering internship. Hands-on experience with cloud platforms and infrastructure.",
+  },
+  {
     role: "Web Developer",
     company: "Self Employed",
     period: "2023 – 2026",
@@ -28,9 +35,9 @@ const experiences = [
       "Building and maintaining web applications. Collaborating with design and product to ship features that improve user experience.",
   },
   {
-    role: "It intern ",
+    role: "IT Intern",
     company: "NetCampus Cape Town",
-    period: "2026 – 2026",
+    period: "2026",
     description: "Technical Support",
   },
 ];
@@ -71,6 +78,7 @@ export default function Experience() {
                 key={`${exp.company}-${i}`}
                 variants={item}
                 className="relative pl-6 border-l-2 border-slate-700 hover:border-accent/60 transition-colors"
+                whileHover={{ x: 4 }}
               >
                 <div className="absolute left-0 top-0 w-3 h-3 -translate-x-[7px] rounded-full bg-accent" />
                 <p className="font-display font-semibold text-white text-lg">

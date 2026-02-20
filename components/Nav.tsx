@@ -9,6 +9,8 @@ const links = [
   { label: "Experience", href: "#experience" },
   { label: "Education", href: "#education" },
   { label: "Projects", href: "#projects" },
+  { label: "Tools", href: "#tools" },
+  { label: "Journey", href: "#journey" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -31,7 +33,7 @@ export default function Nav() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className="font-sans text-sm text-slate-400 hover:text-accent transition-colors"
+                className="nav-link font-sans text-sm text-slate-400 hover:text-accent transition-colors"
               >
                 {link.label}
               </a>
@@ -85,7 +87,7 @@ export default function Nav() {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="block font-sans text-slate-400 hover:text-accent py-2 transition-colors"
+                  className="block nav-link font-sans text-slate-400 hover:text-accent py-2 transition-colors"
                   onClick={() => setOpen(false)}
                 >
                   {link.label}

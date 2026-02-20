@@ -19,6 +19,11 @@ const skills = [
   { name: "Google", img: "/skills/icons8-google-48.png" },
 ];
 
+const deployTools = [
+  { name: "Vercel", label: "Ship & deploy" },
+  { name: "Netlify", label: "Ship & deploy" },
+];
+
 const container = {
   hidden: { opacity: 0 },
   visible: {
@@ -87,6 +92,22 @@ export default function Skills() {
               </motion.div>
             ))}
           </div>
+
+          <motion.p variants={item} className="font-display font-semibold text-accent text-sm uppercase tracking-wider mt-12 mb-4">
+            Shipping & deployment
+          </motion.p>
+          <motion.div variants={item} className="flex flex-wrap gap-3">
+            {deployTools.map((tool) => (
+              <motion.span
+                key={tool.name}
+                className="px-4 py-2 rounded-xl bg-slate-800/60 border border-slate-600 text-slate-300 font-sans text-sm"
+                whileHover={{ scale: 1.05, borderColor: "rgba(14, 165, 233, 0.5)" }}
+                transition={{ duration: 0.2 }}
+              >
+                {tool.name}
+              </motion.span>
+            ))}
+          </motion.div>
         </motion.div>
       </div>
     </section>

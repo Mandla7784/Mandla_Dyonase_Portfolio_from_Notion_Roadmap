@@ -99,16 +99,18 @@ export default function Contact() {
 
           <motion.div variants={item} className="flex flex-wrap gap-6 mb-12">
             {links.map((link) => (
-              <a
+              <motion.a
                 key={link.label}
                 href={link.href}
                 target={link.href.startsWith("mailto") ? undefined : "_blank"}
                 rel={link.href.startsWith("mailto") ? undefined : "noopener noreferrer"}
                 className="flex items-center gap-2 px-5 py-3 rounded-lg border border-slate-600 text-slate-300 hover:border-accent hover:text-accent transition-colors font-sans"
+                whileHover={{ scale: 1.02, y: -2 }}
+                whileTap={{ scale: 0.98 }}
               >
                 <span className="text-accent font-semibold">{link.icon}</span>
                 {link.label}
-              </a>
+              </motion.a>
             ))}
           </motion.div>
 
@@ -168,13 +170,15 @@ export default function Contact() {
               {status === "error" && (
                 <p className="font-sans text-red-400">Something went wrong. Please try emailing directly.</p>
               )}
-              <button
+              <motion.button
                 type="submit"
                 disabled={status === "sending"}
                 className="px-6 py-3 rounded-lg bg-accent text-white font-medium hover:bg-accent/90 transition-colors disabled:opacity-60 disabled:cursor-not-allowed font-sans"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
               >
                 {status === "sending" ? "Sending..." : "Send message"}
-              </button>
+              </motion.button>
           </motion.form>
         </motion.div>
       </div>

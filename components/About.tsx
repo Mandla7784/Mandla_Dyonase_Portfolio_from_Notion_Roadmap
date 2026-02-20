@@ -49,22 +49,19 @@ export default function About() {
             variants={item}
             className="h-1 w-20 bg-accent rounded-full mb-8"
           />
-          <motion.div
-            variants={item}
-            className="space-y-4 text-slate-400 font-sans text-lg leading-relaxed"
-          >
-            <p>
+          <div className="space-y-4 text-slate-400 font-sans text-lg leading-relaxed">
+            <motion.p variants={item}>
               I&apos;m a web developer focused on building fast, accessible
               applications that users enjoy. I care about clean code, clear
               design, and shipping things that work.
-            </p>
-            <p>
+            </motion.p>
+            <motion.p variants={item}>
               When I&apos;m not coding, I like to stay curious—exploring new
               tools and approaches so I can bring fresh ideas to the next
               project. I&apos;m open to full-time roles and collaborations where
               I can contribute from day one.
-            </p>
-          </motion.div>
+            </motion.p>
+          </div>
         </motion.div>
       </div>
     </section>
