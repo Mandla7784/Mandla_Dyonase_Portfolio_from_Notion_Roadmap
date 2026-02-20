@@ -45,7 +45,7 @@ const projects = [
     stack: ["JavaScript", "CSS", "HTML"],
     liveUrl: "https://project-tic-tac-toe-odin.vercel.app/",
     repoUrl: "#",
-    image: "/projects/tic-tac-toe.png",
+    image: "/icons/tci tac toe.jpg",
   },
   {
     title: "Library",
