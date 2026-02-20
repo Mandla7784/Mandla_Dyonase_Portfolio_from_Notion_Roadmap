@@ -76,7 +76,7 @@ export default function Skills() {
               <motion.div
                 key={skill.name}
                 variants={item}
-                className="group flex flex-col items-center justify-center p-4 sm:p-5 rounded-2xl bg-white dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/50 hover:border-accent/40 hover:bg-slate-100 dark:hover:bg-slate-800/70 transition-all duration-300 shadow-sm dark:shadow-none"
+                className="group flex flex-col items-center justify-center p-4 sm:p-5 rounded-2xl bg-white dark:bg-slate-800/40 border border-accent/40 hover:border-accent/70 hover:bg-slate-100 dark:hover:bg-slate-800/70 transition-all duration-300 shadow-sm dark:shadow-none"
                 whileHover={{ y: -4, transition: { duration: 0.2 } }}
               >
                 <div className="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center mb-2">

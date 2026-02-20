@@ -60,7 +60,7 @@ export default function VideoJourney() {
               <motion.div
                 key={v.title + i}
                 variants={item}
-                className="rounded-2xl border border-slate-200 dark:border-slate-700/60 bg-white dark:bg-slate-900/40 overflow-hidden shadow-sm dark:shadow-none"
+                className="rounded-2xl border border-accent/40 bg-white dark:bg-slate-900/40 overflow-hidden shadow-sm dark:shadow-none hover:border-accent/60 transition-colors duration-300"
               >
                 {v.embedUrl ? (
                   <div className="aspect-video">

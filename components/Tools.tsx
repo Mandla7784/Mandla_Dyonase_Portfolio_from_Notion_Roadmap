@@ -70,7 +70,7 @@ export default function Tools() {
                 target="_blank"
                 rel="noopener noreferrer"
                 variants={item}
-                className="block p-6 rounded-2xl border border-slate-200 dark:border-slate-700/60 bg-white dark:bg-slate-900/40 hover:border-accent/50 transition-all duration-300 group shadow-sm dark:shadow-none"
+                className="block p-6 rounded-2xl border border-accent/40 bg-white dark:bg-slate-900/40 hover:border-accent/70 transition-all duration-300 group shadow-sm dark:shadow-none"
                 whileHover={{ y: -4, transition: { duration: 0.2 } }}
               >
                 <span className="font-display font-bold text-xl text-slate-900 dark:text-white group-hover:text-accent transition-colors">

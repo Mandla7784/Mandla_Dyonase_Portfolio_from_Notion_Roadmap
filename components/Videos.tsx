@@ -32,7 +32,7 @@ export default function Videos() {
               <motion.article
                 key={String(i)}
                 variants={item}
-                className="group rounded-xl border border-slate-700/60 bg-slate-900/40 overflow-hidden backdrop-blur-sm hover:border-accent/40 transition-colors"
+                className="group rounded-xl border border-accent/40 bg-slate-900/40 overflow-hidden hover:border-accent/60 transition-colors duration-300"
                 whileHover={{ y: -4 }}
               >
                 <div className="aspect-video bg-slate-800 flex items-center justify-center">
