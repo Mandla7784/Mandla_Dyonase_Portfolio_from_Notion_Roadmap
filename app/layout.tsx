@@ -27,7 +27,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${syne.variable} ${dmSans.variable}`} suppressHydrationWarning>
-      <body className="font-sans min-h-screen" suppressHydrationWarning>{children}</body>
+      <body className="font-sans min-h-screen" suppressHydrationWarning>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: "document.documentElement.classList.toggle('dark', localStorage.getItem('portfolio-theme') !== 'light');",
+          }}
+        />
+        <ThemeProvider>{children}</ThemeProvider>
+      </body>
     </html>
   );
 }
