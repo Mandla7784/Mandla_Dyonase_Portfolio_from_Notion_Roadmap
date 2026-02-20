@@ -23,7 +23,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative py-24 px-6 border-t border-slate-800/50"
+      className="relative py-24 px-6 border-t border-slate-200 dark:border-slate-800/50"
     >
       <div className="max-w-3xl mx-auto">
         <motion.div

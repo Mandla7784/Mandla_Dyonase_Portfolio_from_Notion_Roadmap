@@ -78,7 +78,7 @@ export default function Hero() {
 
         <motion.h1
           variants={item}
-          className="font-display font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-white tracking-tight"
+          className="font-display font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-slate-900 dark:text-white tracking-tight"
         >
           Mandla Dyonase
         </motion.h1>
@@ -90,7 +90,7 @@ export default function Hero() {
 
         <motion.p
           variants={item}
-          className="font-sans text-xl sm:text-2xl text-slate-400 max-w-xl mx-auto"
+          className="font-sans text-xl sm:text-2xl text-slate-600 dark:text-slate-400 max-w-xl mx-auto"
         >
           Web Developer — building fast, accessible, and beautiful experiences.
         </motion.p>
@@ -109,7 +109,7 @@ export default function Hero() {
           </motion.a>
           <motion.a
             href="#contact"
-            className="px-6 py-3 rounded-lg border border-slate-600 text-slate-300 hover:border-accent hover:text-accent transition-colors"
+            className="px-6 py-3 rounded-lg border border-slate-400 dark:border-slate-600 text-slate-700 dark:text-slate-300 hover:border-accent hover:text-accent transition-colors"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
           >
