@@ -91,7 +91,7 @@ export default function Contact() {
           />
           <motion.p
             variants={item}
-            className="font-sans text-slate-600 dark:text-slate-400 text-lg mb-10"
+            className="font-sans text-slate-400 text-lg mb-10"
           >
             I&apos;m open to new opportunities. Send a message or reach out
             directly.
@@ -120,7 +120,7 @@ export default function Contact() {
             className="space-y-5"
           >
               <div>
-                <label htmlFor="name" className="block font-sans text-sm text-slate-600 dark:text-slate-400 mb-1.5">
+                <label htmlFor="name" className="block font-sans text-sm text-slate-400 mb-1.5">
                   Name
                 </label>
                 <input
@@ -130,12 +130,12 @@ export default function Contact() {
                   required
                   value={formData.name}
                   onChange={(e) => setFormData((p) => ({ ...p, name: e.target.value }))}
-                  className="w-full px-4 py-3 rounded-lg bg-slate-50 dark:bg-slate-800/60 border border-slate-300 dark:border-slate-600 text-slate-900 dark:text-white placeholder-slate-400 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent font-sans"
+                  className="w-full px-4 py-3 rounded-lg bg-slate-800/60 border border-slate-600 text-white placeholder-slate-500 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent font-sans"
                   placeholder="Your name"
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block font-sans text-sm text-slate-600 dark:text-slate-400 mb-1.5">
+                <label htmlFor="email" className="block font-sans text-sm text-slate-400 mb-1.5">
                   Email
                 </label>
                 <input
@@ -145,12 +145,12 @@ export default function Contact() {
                   required
                   value={formData.email}
                   onChange={(e) => setFormData((p) => ({ ...p, email: e.target.value }))}
-                  className="w-full px-4 py-3 rounded-lg bg-slate-50 dark:bg-slate-800/60 border border-slate-300 dark:border-slate-600 text-slate-900 dark:text-white placeholder-slate-400 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent font-sans"
+                  className="w-full px-4 py-3 rounded-lg bg-slate-800/60 border border-slate-600 text-white placeholder-slate-500 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent font-sans"
                   placeholder="you@example.com"
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block font-sans text-sm text-slate-600 dark:text-slate-400 mb-1.5">
+                <label htmlFor="message" className="block font-sans text-sm text-slate-400 mb-1.5">
                   Message
                 </label>
                 <textarea
@@ -160,7 +160,7 @@ export default function Contact() {
                   rows={4}
                   value={formData.message}
                   onChange={(e) => setFormData((p) => ({ ...p, message: e.target.value }))}
-                  className="w-full px-4 py-3 rounded-lg bg-slate-50 dark:bg-slate-800/60 border border-slate-300 dark:border-slate-600 text-slate-900 dark:text-white placeholder-slate-400 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent font-sans resize-y min-h-[120px]"
+                  className="w-full px-4 py-3 rounded-lg bg-slate-800/60 border border-slate-600 text-white placeholder-slate-500 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent font-sans resize-y min-h-[120px]"
                   placeholder="Your message..."
                 />
               </div>
