@@ -1,0 +1,10 @@
+Add your assets here:
+
+1. Profile photo: save your photo as profile.png in this folder (public/profile.png).
+   It will appear in the Hero section.
+
+2. Skill icons: create a folder "icons" here (public/icons/) and add one image per skill.
+   Name them: javascript.png, typescript.png, python.png, java.png, react.png, nextjs.png,
+   tailwindcss.png, bootstrap.png, framer-motion.png, nodejs.png, postgresql.png, rest.png,
+   docker.png, git.png, linux.png, vim.png, figma.png, responsive.png, accessibility.png.
+   Use .png, .svg, or .jpg. If a file is missing, the site shows the built-in icon.

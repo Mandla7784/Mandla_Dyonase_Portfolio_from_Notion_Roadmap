@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const container = {
   hidden: { opacity: 0 },
@@ -29,6 +30,7 @@ const lineReveal = {
 };
 
 export default function Hero() {
+  const [imgError, setImgError] = useState(false);
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center px-6 overflow-hidden">
       {/* Ambient glow */}
@@ -41,11 +43,32 @@ export default function Hero() {
       </div>
 
       <motion.div
-        className="relative z-10 text-center max-w-4xl mx-auto"
+        className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16 max-w-5xl mx-auto"
         variants={container}
         initial="hidden"
         animate="visible"
       >
+        {/* Profile photo - impressive focal point */}
+        <motion.div
+          variants={item}
+          className="relative order-first md:order-last shrink-0"
+        >
+          <div className="relative w-44 h-44 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-2xl overflow-hidden ring-2 ring-accent/50 ring-offset-4 ring-offset-surface shadow-2xl shadow-accent/20 bg-surfaceLight">
+            {!imgError ? (
+              <img
+                src="/heroImage.png"
+                alt="Mandla Dyonase"
+                className="w-full h-full object-cover"
+                onError={() => setImgError(true)}
+              />
+            ) : (
+              <span className="absolute inset-0 flex items-center justify-center font-display font-bold text-4xl text-accent/80">MD</span>
+            )}
+          </div>
+          <div className="absolute -inset-2 rounded-2xl bg-accent/20 blur-2xl -z-10" aria-hidden />
+        </motion.div>
+
+        <div className="text-center md:text-left">
         <motion.p
           variants={item}
           className="font-sans text-accent text-sm uppercase tracking-[0.3em] mb-4"
@@ -62,7 +85,7 @@ export default function Hero() {
 
         <motion.div
           variants={lineReveal}
-          className="h-1 w-24 sm:w-32 bg-accent rounded-full mx-auto my-6 origin-left"
+          className="h-1 w-24 sm:w-32 bg-accent rounded-full mx-auto md:mx-0 my-6 origin-left"
         />
 
         <motion.p
@@ -93,6 +116,7 @@ export default function Hero() {
             Get in touch
           </motion.a>
         </motion.div>
+        </div>
       </motion.div>
 
       {/* Scroll hint */}

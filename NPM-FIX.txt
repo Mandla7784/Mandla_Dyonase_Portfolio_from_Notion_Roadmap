@@ -1,0 +1,26 @@
+If "npm install" fails with "Invalid Version" or "next is not recognized":
+
+RUN ONCE (in PowerShell, from the project folder C:\Dev):
+
+  .\setup-and-build.ps1
+
+That script will clear the devdir config, install deps, and build. After it succeeds once, you can use "npm run dev" and "npm run build" normally.
+
+MANUAL FIX (if the script fails):
+
+1. Open a NEW PowerShell window (outside Cursor).
+2. Clear config and env, then install:
+   npm config delete devdir
+   npm config delete version
+   cd C:\Dev
+   npm install
+   npm run build
+
+3. If "Invalid Version" still appears, use pnpm instead (bypasses npm):
+   npm install -g pnpm
+   cd C:\Dev
+   pnpm install
+   pnpm run build
+   (Then use "pnpm run dev" to start the app.)
+
+4. Last resort: open %USERPROFILE%\.npmrc in Notepad and remove any line with "devdir" or "version=". Save and try npm install again.
