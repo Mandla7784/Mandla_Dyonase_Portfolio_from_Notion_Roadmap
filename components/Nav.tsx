@@ -43,11 +43,12 @@ export default function Nav() {
             </li>
           ))}
         </ul>
+        </div>
 
         {/* Mobile menu button */}
         <button
           type="button"
-          className="sm:hidden p-2 text-slate-400 hover:text-white"
+          className="sm:hidden p-2 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white"
           onClick={() => setOpen(!open)}
           aria-expanded={open}
           aria-label="Toggle menu"
@@ -83,14 +84,18 @@ export default function Nav() {
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: "auto" }}
           exit={{ opacity: 0, height: 0 }}
-          className="sm:hidden border-t border-slate-800/50 bg-surface/95 backdrop-blur-md"
+          className="sm:hidden border-t border-slate-200 dark:border-slate-800/50 bg-white/95 dark:bg-surface/95 backdrop-blur-md"
         >
+          <div className="px-6 pt-4 pb-2 flex items-center justify-between">
+            <span className="font-sans text-sm text-slate-600 dark:text-slate-400">Theme</span>
+            <ThemeToggle />
+          </div>
           <ul className="px-6 py-4 flex flex-col gap-2">
             {links.map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="block nav-link font-sans text-slate-400 hover:text-accent py-2 transition-colors"
+                  className="block nav-link font-sans text-slate-600 dark:text-slate-400 hover:text-accent py-2 transition-colors"
                   onClick={() => setOpen(false)}
                 >
                   {link.label}

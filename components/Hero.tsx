@@ -53,7 +53,7 @@ export default function Hero() {
           variants={item}
           className="relative order-first md:order-last shrink-0"
         >
-          <div className="relative w-44 h-44 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-2xl overflow-hidden ring-2 ring-accent/50 ring-offset-4 ring-offset-surface shadow-2xl shadow-accent/20 bg-surfaceLight">
+          <div className="relative w-44 h-44 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-2xl overflow-hidden ring-2 ring-accent/50 ring-offset-4 ring-offset-white dark:ring-offset-surface shadow-2xl shadow-accent/20 bg-slate-200 dark:bg-surfaceLight">
             {!imgError ? (
               <img
                 src="/heroImage.png"
