@@ -13,6 +13,7 @@ export default function ThemeToggle() {
       className="p-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 hover:border-accent hover:text-accent transition-colors"
       aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
       whileTap={{ scale: 0.95 }}
+      suppressHydrationWarning
     >
       {theme === "dark" ? (
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>

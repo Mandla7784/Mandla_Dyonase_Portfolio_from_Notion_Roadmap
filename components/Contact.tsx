@@ -132,6 +132,7 @@ export default function Contact() {
                   onChange={(e) => setFormData((p) => ({ ...p, name: e.target.value }))}
                   className="w-full px-4 py-3 rounded-lg bg-slate-800/60 border border-slate-600 text-white placeholder-slate-500 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent font-sans"
                   placeholder="Your name"
+                  suppressHydrationWarning
                 />
               </div>
               <div>
@@ -147,6 +148,7 @@ export default function Contact() {
                   onChange={(e) => setFormData((p) => ({ ...p, email: e.target.value }))}
                   className="w-full px-4 py-3 rounded-lg bg-slate-800/60 border border-slate-600 text-white placeholder-slate-500 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent font-sans"
                   placeholder="you@example.com"
+                  suppressHydrationWarning
                 />
               </div>
               <div>
@@ -162,6 +164,7 @@ export default function Contact() {
                   onChange={(e) => setFormData((p) => ({ ...p, message: e.target.value }))}
                   className="w-full px-4 py-3 rounded-lg bg-slate-800/60 border border-slate-600 text-white placeholder-slate-500 focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent font-sans resize-y min-h-[120px]"
                   placeholder="Your message..."
+                  suppressHydrationWarning
                 />
               </div>
               {status === "success" && (
