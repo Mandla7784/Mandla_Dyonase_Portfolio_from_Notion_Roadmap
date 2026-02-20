@@ -130,7 +130,7 @@ export default function Projects() {
                       {proj.stack.slice(0, 3).map((tech) => (
                         <span
                           key={tech}
-                          className="px-2 py-0.5 rounded-md bg-slate-200 text-slate-700 text-xs font-medium dark:bg-slate-700 dark:text-slate-200"
+                          className="px-2 py-0.5 rounded-md border border-accent/50 bg-black/20 dark:bg-white/10 text-slate-800 dark:text-slate-200 text-xs font-medium"
                         >
                           {tech}
                         </span>
@@ -149,7 +149,7 @@ export default function Projects() {
                     {proj.stack.map((tech) => (
                       <span
                         key={tech}
-                        className="px-2 py-0.5 rounded bg-slate-200 text-slate-600 text-xs font-sans dark:bg-slate-700 dark:text-slate-200"
+                        className="px-2 py-0.5 rounded border border-accent/50 bg-black/15 dark:bg-white/10 text-slate-700 dark:text-slate-200 text-xs font-sans"
                       >
                         {tech}
                       </span>
