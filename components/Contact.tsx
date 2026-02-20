@@ -104,7 +104,7 @@ export default function Contact() {
                 href={link.href}
                 target={link.href.startsWith("mailto") ? undefined : "_blank"}
                 rel={link.href.startsWith("mailto") ? undefined : "noopener noreferrer"}
-                className="flex items-center gap-2 px-5 py-3 rounded-lg border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 hover:border-accent hover:text-accent transition-colors font-sans"
+                className="flex items-center gap-2 px-5 py-3 rounded-lg border border-slate-600 text-slate-300 hover:border-accent hover:text-accent transition-colors font-sans"
                 whileHover={{ scale: 1.02, y: -2 }}
                 whileTap={{ scale: 0.98 }}
               >

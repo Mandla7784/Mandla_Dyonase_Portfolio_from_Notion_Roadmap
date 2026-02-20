@@ -112,7 +112,7 @@ export default function Projects() {
               <motion.article
                 key={proj.title}
                 variants={card}
-                className="group rounded-2xl border border-slate-200 dark:border-slate-700/60 bg-white dark:bg-slate-900/50 overflow-hidden hover:border-accent/50 transition-all duration-300 hover:shadow-xl hover:shadow-accent/5 shadow-sm dark:shadow-none"
+                className="group rounded-2xl bg-white dark:bg-slate-900/50 overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-accent/5 shadow-sm dark:shadow-none"
                 whileHover={{ y: -6, transition: { duration: 0.2 } }}
               >
                 <a
