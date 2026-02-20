@@ -13,7 +13,7 @@ export default function Footer() {
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
     >
-      <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-500 text-sm font-sans">
+      <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-600 dark:text-slate-500 text-sm font-sans">
         <p>© {year} Mandla Dyonase. All rights reserved.</p>
         <motion.a
           href="#"

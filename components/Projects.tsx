@@ -102,7 +102,7 @@ export default function Projects() {
               <motion.article
                 key={proj.title}
                 variants={card}
-                className="group rounded-2xl border border-slate-200 dark:border-slate-700/60 bg-white dark:bg-slate-900/50 overflow-hidden backdrop-blur-sm hover:border-accent/50 transition-all duration-300 hover:shadow-xl hover:shadow-accent/5 shadow-sm dark:shadow-none"
+                className="group rounded-2xl border border-slate-200 dark:border-slate-700/60 bg-white dark:bg-slate-900/50 overflow-hidden hover:border-accent/50 transition-all duration-300 hover:shadow-xl hover:shadow-accent/5 shadow-sm dark:shadow-none"
                 whileHover={{ y: -6, transition: { duration: 0.2 } }}
               >
                 <a
@@ -111,7 +111,7 @@ export default function Projects() {
                   rel="noopener noreferrer"
                   className="block"
                 >
-                  <div className="aspect-video bg-gradient-to-br from-slate-800 to-slate-900 relative overflow-hidden">
+                  <div className="aspect-video bg-gradient-to-br from-slate-200 to-slate-300 dark:from-slate-800 dark:to-slate-900 relative overflow-hidden">
                     <img
                       src={proj.image}
                       alt=""
@@ -125,12 +125,12 @@ export default function Projects() {
                       <span className="text-4xl mb-2">🖼</span>
                       Add screenshot
                     </div>
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-60 pointer-events-none" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900 dark:from-slate-900 via-transparent to-transparent opacity-40 dark:opacity-60 pointer-events-none" />
                     <div className="absolute bottom-3 left-3 right-3 flex flex-wrap gap-1.5">
                       {proj.stack.slice(0, 3).map((tech) => (
                         <span
                           key={tech}
-                          className="px-2 py-0.5 rounded-md bg-slate-200 dark:bg-slate-800/90 text-slate-700 dark:text-slate-300 text-xs font-medium backdrop-blur-sm"
+                          className="px-2 py-0.5 rounded-md bg-slate-200 text-slate-700 text-xs font-medium dark:bg-slate-700 dark:text-slate-200"
                         >
                           {tech}
                         </span>
@@ -149,7 +149,7 @@ export default function Projects() {
                     {proj.stack.map((tech) => (
                       <span
                         key={tech}
-                        className="px-2 py-0.5 rounded bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-xs font-sans"
+                        className="px-2 py-0.5 rounded bg-slate-200 text-slate-600 text-xs font-sans dark:bg-slate-700 dark:text-slate-200"
                       >
                         {tech}
                       </span>
