@@ -179,6 +179,7 @@ export default function Contact() {
                 className="px-6 py-3 rounded-lg bg-accent text-white font-medium hover:bg-accent/90 transition-colors disabled:opacity-60 disabled:cursor-not-allowed font-sans"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
+                suppressHydrationWarning
               >
                 {status === "sending" ? "Sending..." : "Send message"}
               </motion.button>

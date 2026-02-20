@@ -11,22 +11,13 @@ const container = {
 };
 
 const card = {
-  hidden: { opacity: 0, y: 40, scale: 0.96 },
+  hidden: { opacity: 0, y: 48, scale: 0.92 },
   visible: {
     opacity: 1,
     y: 0,
     scale: 1,
-    transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1] },
+    transition: { type: "spring", stiffness: 260, damping: 24, mass: 0.8 },
   },
-};
-
-const tagStagger = {
-  hidden: { opacity: 0, scale: 0.8 },
-  visible: (i: number) => ({
-    opacity: 1,
-    scale: 1,
-    transition: { delay: 0.1 + i * 0.05, duration: 0.3, ease: "backOut" },
-  }),
 };
 
 const projects = [
@@ -112,8 +103,13 @@ export default function Projects() {
               <motion.article
                 key={proj.title}
                 variants={card}
-                className="group rounded-2xl bg-white dark:bg-slate-900/50 overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-accent/5 shadow-sm dark:shadow-none"
-                whileHover={{ y: -6, transition: { duration: 0.2 } }}
+                className="group rounded-2xl bg-white dark:bg-slate-900/50 overflow-hidden shadow-sm dark:shadow-none hover:shadow-xl hover:shadow-accent/10 dark:hover:shadow-accent/5 transition-shadow duration-300"
+                whileHover={{
+                  y: -10,
+                  scale: 1.02,
+                  transition: { type: "spring", stiffness: 400, damping: 25 },
+                }}
+                transition={{ type: "spring", stiffness: 300, damping: 24 }}
               >
                 <a
                   href={proj.liveUrl}
