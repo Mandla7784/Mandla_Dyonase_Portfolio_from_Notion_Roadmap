@@ -46,7 +46,7 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="relative py-24 px-6 border-t border-slate-800/50"
+      className="relative py-24 px-6 border-t border-slate-200 dark:border-slate-800/50"
     >
       <div className="max-w-3xl mx-auto">
         <motion.div
@@ -63,7 +63,7 @@ export default function Experience() {
           </motion.p>
           <motion.h2
             variants={item}
-            className="font-display font-bold text-3xl sm:text-4xl text-white mb-6"
+            className="font-display font-bold text-3xl sm:text-4xl text-slate-900 dark:text-white mb-6"
           >
             Where I&apos;ve worked
           </motion.h2>
@@ -77,20 +77,20 @@ export default function Experience() {
               <motion.article
                 key={`${exp.company}-${i}`}
                 variants={item}
-                className="relative pl-6 border-l-2 border-slate-700 hover:border-accent/60 transition-colors"
+                className="relative pl-6 border-l-2 border-slate-300 dark:border-slate-700 hover:border-accent/60 transition-colors"
                 whileHover={{ x: 4 }}
               >
                 <div className="absolute left-0 top-0 w-3 h-3 -translate-x-[7px] rounded-full bg-accent" />
-                <p className="font-display font-semibold text-white text-lg">
+                <p className="font-display font-semibold text-slate-900 dark:text-white text-lg">
                   {exp.role}
                 </p>
                 <p className="font-sans text-accent text-sm mt-1">
                   {exp.company}
                 </p>
-                <p className="font-sans text-slate-500 text-sm mt-0.5">
+                <p className="font-sans text-slate-600 dark:text-slate-500 text-sm mt-0.5">
                   {exp.period}
                 </p>
-                <p className="font-sans text-slate-400 mt-3 leading-relaxed">
+                <p className="font-sans text-slate-600 dark:text-slate-400 mt-3 leading-relaxed">
                   {exp.description}
                 </p>
               </motion.article>

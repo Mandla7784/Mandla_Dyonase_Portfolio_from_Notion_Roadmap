@@ -45,7 +45,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="relative py-24 px-6 border-t border-slate-800/50 bg-surfaceLight/30"
+      className="relative py-24 px-6 border-t border-slate-200 dark:border-slate-800/50 bg-slate-50 dark:bg-surfaceLight/30"
     >
       <div className="max-w-4xl mx-auto">
         <motion.div
@@ -62,7 +62,7 @@ export default function Skills() {
           </motion.p>
           <motion.h2
             variants={item}
-            className="font-display font-bold text-3xl sm:text-4xl text-white mb-6"
+            className="font-display font-bold text-3xl sm:text-4xl text-slate-900 dark:text-white mb-6"
           >
             What I work with
           </motion.h2>
@@ -76,7 +76,7 @@ export default function Skills() {
               <motion.div
                 key={skill.name}
                 variants={item}
-                className="group flex flex-col items-center justify-center p-4 sm:p-5 rounded-2xl bg-slate-800/40 border border-slate-700/50 hover:border-accent/40 hover:bg-slate-800/70 transition-all duration-300"
+                className="group flex flex-col items-center justify-center p-4 sm:p-5 rounded-2xl bg-white dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/50 hover:border-accent/40 hover:bg-slate-100 dark:hover:bg-slate-800/70 transition-all duration-300 shadow-sm dark:shadow-none"
                 whileHover={{ y: -4, transition: { duration: 0.2 } }}
               >
                 <div className="w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center mb-2">
@@ -86,7 +86,7 @@ export default function Skills() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <span className="font-sans text-slate-300 text-xs sm:text-sm text-center group-hover:text-white transition-colors">
+                <span className="font-sans text-slate-600 dark:text-slate-300 text-xs sm:text-sm text-center group-hover:text-slate-900 dark:group-hover:text-white transition-colors">
                   {skill.name}
                 </span>
               </motion.div>
@@ -100,7 +100,7 @@ export default function Skills() {
             {deployTools.map((tool) => (
               <motion.span
                 key={tool.name}
-                className="px-4 py-2 rounded-xl bg-slate-800/60 border border-slate-600 text-slate-300 font-sans text-sm"
+                className="px-4 py-2 rounded-xl bg-slate-100 dark:bg-slate-800/60 border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 font-sans text-sm"
                 whileHover={{ scale: 1.05, borderColor: "rgba(14, 165, 233, 0.5)" }}
                 transition={{ duration: 0.2 }}
               >

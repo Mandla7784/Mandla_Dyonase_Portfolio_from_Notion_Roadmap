@@ -71,7 +71,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="relative py-24 px-6 border-t border-slate-800/50 bg-surfaceLight/30 overflow-hidden"
+      className="relative py-24 px-6 border-t border-slate-200 dark:border-slate-800/50 bg-slate-50 dark:bg-surfaceLight/30 overflow-hidden"
     >
       <div className="max-w-5xl mx-auto">
         <motion.div
@@ -88,7 +88,7 @@ export default function Projects() {
           </motion.p>
           <motion.h2
             variants={card}
-            className="font-display font-bold text-3xl sm:text-4xl text-white mb-6"
+            className="font-display font-bold text-3xl sm:text-4xl text-slate-900 dark:text-white mb-6"
           >
             Shipped on Vercel
           </motion.h2>
@@ -102,7 +102,7 @@ export default function Projects() {
               <motion.article
                 key={proj.title}
                 variants={card}
-                className="group rounded-2xl border border-slate-700/60 bg-slate-900/50 overflow-hidden backdrop-blur-sm hover:border-accent/50 transition-all duration-300 hover:shadow-xl hover:shadow-accent/5"
+                className="group rounded-2xl border border-slate-200 dark:border-slate-700/60 bg-white dark:bg-slate-900/50 overflow-hidden backdrop-blur-sm hover:border-accent/50 transition-all duration-300 hover:shadow-xl hover:shadow-accent/5 shadow-sm dark:shadow-none"
                 whileHover={{ y: -6, transition: { duration: 0.2 } }}
               >
                 <a
@@ -121,7 +121,7 @@ export default function Projects() {
                         t.style.display = "none";
                       }}
                     />
-                    <div className="absolute inset-0 flex flex-col items-center justify-center text-slate-500 font-sans text-sm">
+                    <div className="absolute inset-0 flex flex-col items-center justify-center text-slate-500 dark:text-slate-500 font-sans text-sm">
                       <span className="text-4xl mb-2">🖼</span>
                       Add screenshot
                     </div>
@@ -130,7 +130,7 @@ export default function Projects() {
                       {proj.stack.slice(0, 3).map((tech) => (
                         <span
                           key={tech}
-                          className="px-2 py-0.5 rounded-md bg-slate-800/90 text-slate-300 text-xs font-medium backdrop-blur-sm"
+                          className="px-2 py-0.5 rounded-md bg-slate-200 dark:bg-slate-800/90 text-slate-700 dark:text-slate-300 text-xs font-medium backdrop-blur-sm"
                         >
                           {tech}
                         </span>
@@ -139,17 +139,17 @@ export default function Projects() {
                   </div>
                 </a>
                 <div className="p-4">
-                  <h3 className="font-display font-bold text-lg text-white group-hover:text-accent transition-colors">
+                  <h3 className="font-display font-bold text-lg text-slate-900 dark:text-white group-hover:text-accent transition-colors">
                     {proj.title}
                   </h3>
-                  <p className="font-sans text-slate-400 text-sm mt-1 line-clamp-2">
+                  <p className="font-sans text-slate-600 dark:text-slate-400 text-sm mt-1 line-clamp-2">
                     {proj.description}
                   </p>
                   <div className="mt-3 flex flex-wrap gap-2">
                     {proj.stack.map((tech) => (
                       <span
                         key={tech}
-                        className="px-2 py-0.5 rounded bg-slate-800 text-slate-400 text-xs font-sans"
+                        className="px-2 py-0.5 rounded bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-400 text-xs font-sans"
                       >
                         {tech}
                       </span>
@@ -170,7 +170,7 @@ export default function Projects() {
                         href={proj.repoUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="font-sans text-slate-400 hover:text-accent text-sm"
+                        className="font-sans text-slate-600 dark:text-slate-400 hover:text-accent text-sm"
                         whileHover={{ x: 2 }}
                       >
                         Repo

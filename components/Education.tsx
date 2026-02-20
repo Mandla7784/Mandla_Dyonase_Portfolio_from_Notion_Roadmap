@@ -23,7 +23,7 @@ export default function Education() {
   return (
     <section
       id="education"
-      className="relative py-24 px-6 border-t border-slate-800/50 bg-surfaceLight/30"
+      className="relative py-24 px-6 border-t border-slate-200 dark:border-slate-800/50 bg-slate-50 dark:bg-surfaceLight/30"
     >
       <div className="max-w-3xl mx-auto">
         <motion.div
@@ -40,7 +40,7 @@ export default function Education() {
           </motion.p>
           <motion.h2
             variants={item}
-            className="font-display font-bold text-3xl sm:text-4xl text-white mb-6"
+            className="font-display font-bold text-3xl sm:text-4xl text-slate-900 dark:text-white mb-6"
           >
             Where I learned
           </motion.h2>
@@ -51,17 +51,17 @@ export default function Education() {
 
           <motion.article
             variants={item}
-            className="relative pl-6 border-l-2 border-slate-700 hover:border-accent/60 transition-colors"
+            className="relative pl-6 border-l-2 border-slate-300 dark:border-slate-700 hover:border-accent/60 transition-colors"
             whileHover={{ x: 4 }}
           >
             <div className="absolute left-0 top-0 w-3 h-3 -translate-x-[7px] rounded-full bg-accent" />
-            <p className="font-display font-semibold text-white text-lg">
+            <p className="font-display font-semibold text-slate-900 dark:text-white text-lg">
               Certificate in Software Development
             </p>
             <p className="font-sans text-accent text-sm mt-1">
               CodeSpace Academy
             </p>
-            <p className="font-sans text-slate-400 mt-2">
+            <p className="font-sans text-slate-600 dark:text-slate-400 mt-2">
               Software Development Fundamentals
             </p>
           </motion.article>
