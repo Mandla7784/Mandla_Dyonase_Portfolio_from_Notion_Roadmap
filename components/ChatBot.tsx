@@ -89,16 +89,19 @@ export default function ChatBot() {
         )}
       </AnimatePresence>
 
-      {/* Floating button - hero image as avatar */}
+      {/* Floating button - robot icon when closed */}
       <motion.button
         type="button"
         onClick={() => setOpen((o) => !o)}
-        className="fixed bottom-6 right-6 z-[99] w-14 h-14 rounded-full overflow-hidden shadow-lg ring-2 ring-accent/50 hover:ring-accent focus:outline-none focus:ring-2 focus:ring-accent"
+        className="fixed bottom-6 right-6 z-[99] w-14 h-14 rounded-full flex items-center justify-center bg-slate-800 dark:bg-slate-700 text-accent shadow-lg ring-2 ring-accent/50 hover:ring-accent focus:outline-none focus:ring-2 focus:ring-accent"
         aria-label={open ? "Close chat" : "Open chat"}
         whileHover={{ scale: 1.08 }}
         whileTap={{ scale: 0.95 }}
       >
-        <Avatar className="w-full h-full" />
+        <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 7a1 1 0 11-2 0 1 1 0 012 0z" />
+        </svg>
       </motion.button>
     </>
   );
