@@ -64,7 +64,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative py-24 px-6 border-t border-slate-800/50"
+      className="relative py-24 px-6 border-t border-slate-200 dark:border-slate-800/50"
     >
       <div className="max-w-3xl mx-auto">
         <motion.div
@@ -81,7 +81,7 @@ export default function Contact() {
           </motion.p>
           <motion.h2
             variants={item}
-            className="font-display font-bold text-3xl sm:text-4xl text-white mb-6"
+            className="font-display font-bold text-3xl sm:text-4xl text-slate-900 dark:text-white mb-6"
           >
             Get in touch
           </motion.h2>
@@ -91,7 +91,7 @@ export default function Contact() {
           />
           <motion.p
             variants={item}
-            className="font-sans text-slate-400 text-lg mb-10"
+            className="font-sans text-slate-600 dark:text-slate-400 text-lg mb-10"
           >
             I&apos;m open to new opportunities. Send a message or reach out
             directly.
@@ -104,7 +104,7 @@ export default function Contact() {
                 href={link.href}
                 target={link.href.startsWith("mailto") ? undefined : "_blank"}
                 rel={link.href.startsWith("mailto") ? undefined : "noopener noreferrer"}
-                className="flex items-center gap-2 px-5 py-3 rounded-lg border border-slate-600 text-slate-300 hover:border-accent hover:text-accent transition-colors font-sans"
+                className="flex items-center gap-2 px-5 py-3 rounded-lg border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 hover:border-accent hover:text-accent transition-colors font-sans"
                 whileHover={{ scale: 1.02, y: -2 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -120,7 +120,7 @@ export default function Contact() {
             className="space-y-5"
           >
               <div>
-                <label htmlFor="name" className="block font-sans text-sm text-slate-400 mb-1.5">
+                <label htmlFor="name" className="block font-sans text-sm text-slate-600 dark:text-slate-400 mb-1.5">
                   Name
                 </label>
                 <input
@@ -135,7 +135,7 @@ export default function Contact() {
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block font-sans text-sm text-slate-400 mb-1.5">
+                <label htmlFor="email" className="block font-sans text-sm text-slate-600 dark:text-slate-400 mb-1.5">
                   Email
                 </label>
                 <input
@@ -150,7 +150,7 @@ export default function Contact() {
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block font-sans text-sm text-slate-400 mb-1.5">
+                <label htmlFor="message" className="block font-sans text-sm text-slate-600 dark:text-slate-400 mb-1.5">
                   Message
                 </label>
                 <textarea

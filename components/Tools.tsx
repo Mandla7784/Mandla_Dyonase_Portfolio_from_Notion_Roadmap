@@ -53,7 +53,7 @@ export default function Tools() {
           </motion.p>
           <motion.h2
             variants={item}
-            className="font-display font-bold text-3xl sm:text-4xl text-white mb-6"
+            className="font-display font-bold text-3xl sm:text-4xl text-slate-900 dark:text-white mb-6"
           >
             Tools I use for shipping
           </motion.h2>
@@ -70,13 +70,13 @@ export default function Tools() {
                 target="_blank"
                 rel="noopener noreferrer"
                 variants={item}
-                className="block p-6 rounded-2xl border border-slate-700/60 bg-slate-900/40 hover:border-accent/50 transition-all duration-300 group"
+                className="block p-6 rounded-2xl border border-slate-200 dark:border-slate-700/60 bg-white dark:bg-slate-900/40 hover:border-accent/50 transition-all duration-300 group shadow-sm dark:shadow-none"
                 whileHover={{ y: -4, transition: { duration: 0.2 } }}
               >
-                <span className="font-display font-bold text-xl text-white group-hover:text-accent transition-colors">
+                <span className="font-display font-bold text-xl text-slate-900 dark:text-white group-hover:text-accent transition-colors">
                   {tool.name}
                 </span>
-                <p className="font-sans text-slate-400 text-sm mt-2">
+                <p className="font-sans text-slate-600 dark:text-slate-400 text-sm mt-2">
                   {tool.description}
                 </p>
               </motion.a>

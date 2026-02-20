@@ -29,7 +29,7 @@ export default function VideoJourney() {
   return (
     <section
       id="journey"
-      className="relative py-24 px-6 border-t border-slate-800/50 bg-surfaceLight/30 overflow-hidden"
+      className="relative py-24 px-6 border-t border-slate-200 dark:border-slate-800/50 bg-slate-50 dark:bg-surfaceLight/30 overflow-hidden"
     >
       <div className="max-w-4xl mx-auto">
         <motion.div
@@ -46,7 +46,7 @@ export default function VideoJourney() {
           </motion.p>
           <motion.h2
             variants={item}
-            className="font-display font-bold text-3xl sm:text-4xl text-white mb-6"
+            className="font-display font-bold text-3xl sm:text-4xl text-slate-900 dark:text-white mb-6"
           >
             My journey in videos
           </motion.h2>
@@ -60,7 +60,7 @@ export default function VideoJourney() {
               <motion.div
                 key={v.title + i}
                 variants={item}
-                className="rounded-2xl border border-slate-700/60 bg-slate-900/40 overflow-hidden"
+                className="rounded-2xl border border-slate-200 dark:border-slate-700/60 bg-white dark:bg-slate-900/40 overflow-hidden shadow-sm dark:shadow-none"
               >
                 {v.embedUrl ? (
                   <div className="aspect-video">
@@ -72,14 +72,14 @@ export default function VideoJourney() {
                     />
                   </div>
                 ) : (
-                  <div className="aspect-video bg-gradient-to-br from-slate-800 to-slate-900 flex flex-col items-center justify-center text-slate-500 font-sans">
+                  <div className="aspect-video bg-gradient-to-br from-slate-200 to-slate-300 dark:from-slate-800 dark:to-slate-900 flex flex-col items-center justify-center text-slate-500 font-sans">
                     <span className="text-5xl mb-3">🎬</span>
                     <span className="text-sm">Add your video</span>
                     <span className="text-xs mt-1 opacity-80">{v.title}</span>
                   </div>
                 )}
                 <div className="p-4">
-                  <h3 className="font-display font-semibold text-white">
+                  <h3 className="font-display font-semibold text-slate-900 dark:text-white">
                     {v.title}
                   </h3>
                 </div>
@@ -88,10 +88,10 @@ export default function VideoJourney() {
           </div>
           <motion.p
             variants={item}
-            className="mt-6 font-sans text-slate-500 text-sm"
+            className="mt-6 font-sans text-slate-600 dark:text-slate-500 text-sm"
           >
             Add your YouTube/Vimeo embed URLs in{" "}
-            <code className="bg-slate-800 px-1.5 py-0.5 rounded text-slate-400">
+            <code className="bg-slate-200 dark:bg-slate-800 px-1.5 py-0.5 rounded text-slate-600 dark:text-slate-400">
               components/VideoJourney.tsx
             </code>{" "}
             to show your journey videos here.
