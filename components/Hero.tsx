@@ -126,11 +126,11 @@ export default function Hero() {
         animate={{ opacity: 1 }}
         transition={{ delay: 1.2, duration: 0.6 }}
       >
-        <span className="text-xs text-slate-500 uppercase tracking-widest">
+        <span className="text-xs text-slate-500 dark:text-slate-500 uppercase tracking-widest">
           Scroll
         </span>
         <motion.div
-          className="w-6 h-10 rounded-full border-2 border-slate-600 flex justify-center pt-2"
+          className="w-6 h-10 rounded-full border-2 border-slate-400 dark:border-slate-600 flex justify-center pt-2"
           animate={{ y: [0, 6, 0] }}
           transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
         >

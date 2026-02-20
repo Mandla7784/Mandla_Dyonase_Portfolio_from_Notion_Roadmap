@@ -41,7 +41,7 @@ export default function About() {
           </motion.p>
           <motion.h2
             variants={item}
-            className="font-display font-bold text-3xl sm:text-4xl text-white mb-6"
+            className="font-display font-bold text-3xl sm:text-4xl text-slate-900 dark:text-white mb-6"
           >
             A bit about me
           </motion.h2>
@@ -49,7 +49,7 @@ export default function About() {
             variants={item}
             className="h-1 w-20 bg-accent rounded-full mb-8"
           />
-          <div className="space-y-4 text-slate-400 font-sans text-lg leading-relaxed">
+          <div className="space-y-4 text-slate-600 dark:text-slate-400 font-sans text-lg leading-relaxed">
             <motion.p variants={item}>
               I&apos;m a web developer focused on building fast, accessible
               applications that users enjoy. I care about clean code, clear
