@@ -6,17 +6,27 @@ const container = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: { staggerChildren: 0.1, delayChildren: 0.15 },
+    transition: { staggerChildren: 0.12, delayChildren: 0.2 },
   },
 };
 
 const card = {
-  hidden: { opacity: 0, y: 32 },
+  hidden: { opacity: 0, y: 40, scale: 0.96 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] },
+    scale: 1,
+    transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1] },
   },
+};
+
+const tagStagger = {
+  hidden: { opacity: 0, scale: 0.8 },
+  visible: (i: number) => ({
+    opacity: 1,
+    scale: 1,
+    transition: { delay: 0.1 + i * 0.05, duration: 0.3, ease: "backOut" },
+  }),
 };
 
 const projects = [
