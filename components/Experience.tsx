@@ -37,7 +37,7 @@ const experiences = [
   {
     role: "IT Intern",
     company: "NetCampus Cape Town",
-    period: "2026",
+    period: "Febuary 2026 - Present (3 months)",
     description: "Technical Support",
   },
 ];
